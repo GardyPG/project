@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/pages/book/book_page.dart';
-import 'package:project/pages/welcomescreen.dart';
+import 'package:project/pages/home/welcomescreen.dart';
 
 void main() {
   runApp(const MyApp());
