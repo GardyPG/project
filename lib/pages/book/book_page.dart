@@ -15,7 +15,7 @@ class BookPage extends StatefulWidget {
 class _BookPageState extends State<BookPage> {
   Icon customIcon = const Icon(Icons.favorite_border_outlined);
   var _subPageIndex = 0;
-  var item;
+  dynamic item;
 
   @override
   Widget build(BuildContext context) {
@@ -93,7 +93,7 @@ class _BookPageState extends State<BookPage> {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: _subPageIndex == 1 ? Colors.white : Colors.black,
-                    side: BorderSide(color: Colors.white, width: 2),
+                    side: const BorderSide(color: Colors.white, width: 2),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
@@ -111,7 +111,7 @@ class _BookPageState extends State<BookPage> {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: _subPageIndex == 2 ? Colors.white : Colors.black,
-                    side: BorderSide(color: Colors.white, width: 2),
+                    side: const BorderSide(color: Colors.white, width: 2),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
